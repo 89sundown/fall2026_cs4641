@@ -1,0 +1,51 @@
+# ---- Jekyll build output and caches ----
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# ---- Bundler (Ruby) ----
+.bundle/
+vendor/
+# Gemfile.lock is intentionally NOT ignored: commit it so everyone builds with the same gem versions
+
+# ---- Node (only matters if a theme or tooling uses npm) ----
+node_modules/
+
+# ---- Secrets ----
+.env
+.env.*
+*.pem
+*.key
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Editors ----
+.idea/
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+
+# ---- Python / notebooks (if the project code lives in the same repo) ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---- Data and model artifacts (large, regenerable, or not yours to redistribute) ----
+data/
+datasets/
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.onnx
+*.parquet
+wandb/
+mlruns/
